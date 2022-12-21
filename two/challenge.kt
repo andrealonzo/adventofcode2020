@@ -30,7 +30,7 @@ fun isPart2PasswordValid(password: Password): Boolean {
 }
 
 private fun parseInput(): List<Password> {
-    val list = File("./2/input.txt").readLines()
+    val list = File("two/input.txt").readLines()
     val listArr = list.map { x -> x.split(" ") }
 
     val passwords = listArr.map { line ->
@@ -44,13 +44,21 @@ private fun parseInput(): List<Password> {
     return passwords
 }
 
+fun answer1(passwords: List<Password>): Int {
+    return answer(passwords, ::isPart1PasswordValid)
+}
+
+fun answer2(passwords: List<Password>): Int {
+    return answer(passwords, ::isPart2PasswordValid)
+}
+
 
 fun main() {
     val passwords = parseInput()
-    val answer1 = answer(passwords, ::isPart1PasswordValid)
+    val answer1 = answer1(passwords)
     println("Answer 1: $answer1")
 
-    val answer2 = answer(passwords, ::isPart2PasswordValid)
+    val answer2 = answer2(passwords)
     println("Answer 2: $answer2")
 }
 

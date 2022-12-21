@@ -27,7 +27,7 @@ fun answer2(list: List<Int>): Int {
 }
 
 fun main() {
-    val list = File("./1/input.txt").readLines().map { it.toInt() }
+    val list = File("one/input.txt").readLines().map { it.toInt() }
 
     val answer1 = answer1(list)
     println("Answer 1: $answer1")
