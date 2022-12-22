@@ -1,4 +1,4 @@
-package com.aalonzo.adventofcode2020.one
+package com.aalonzo.adventofcode2020.day1
 
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test

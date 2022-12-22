@@ -1,4 +1,4 @@
-package com.aalonzo.adventofcode2020.two
+package com.aalonzo.adventofcode2020.day2
 
 import java.io.File
 
@@ -56,7 +56,7 @@ fun answer2(input: String): Int {
 
 
 fun main() {
-    val input = File("two/input.txt").readText()
+    val input = File("day2/input.txt").readText()
     val answer1 = answer1(input)
     println("Answer 1: $answer1")
 
